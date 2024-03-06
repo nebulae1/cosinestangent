@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+
+import Link from "./Link.astro";
+
+import navData from "../data/navData";
+---
+
+<nav aria-label="Primary">
+  <div class="navbar">
+    <a href="/" class="logomark" aria-label="Go home">
+      <Image
+        src="/images/COSINESTANGENT3.webp"
+        alt="Triangle logo"
+        width="100"
+        height="100"
+      />
+    </a>
+    <ul>
+      {
+        navData.map((item) => (
+          <Link
+            text={item.name}
+            href={item.path}
+            style="primary"
+            isFilled={false}
+            data-navLink
+          />
+        ))
+      }
+    </ul>
+  </div>
+</nav>
+
+<script>
+  import "../js/nav.js";
+</script>

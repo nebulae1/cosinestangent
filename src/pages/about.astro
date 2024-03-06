@@ -1,0 +1,84 @@
+---
+import Link from "../components/Link.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="About" description="About Page">
+  <section class="container about" aria-label="About Page">
+    <img
+      src="/images/headshot.webp"
+      alt="My headshot"
+      width="200"
+      height="330"
+    />
+    <div class="content">
+      <h1 class="h1">Hello I'm Craig</h1>
+      <p>
+        Thank you for engaging with my site today. I have had the opportunity to work on amazing projects for global
+        companies building platforms that get them to the next level. Powering mountain resorts like Vail and Whistler, architecting data dashboards for Humana, 
+        and most recently leading Atkore through a 600,000+ product digital transformation journey and winning a global award. This has been fun because I generally don't get to try new front-end frameworks, well for fun. 
+      </p>
+      <p>
+        Bear with me while the dust settles, the look and feel is a work in progress. If you have any advice, I would love to hear it! 
+        Otherwise, I hope you aren't looking for my contact info to complain. If you are, the buttons below are broken. Except the last one, that one works.
+      </p>
+      <ul class="categories">
+      <li>
+        <Link
+        href="mailto:jrchelton@gmail.com"
+        style="secondary"
+        text="Email"
+        icon={{
+          name: "line-md:cloud-print-outline-loop",
+          side: "right",
+        }}
+            />
+      </li>
+      <li>
+    <Link
+    href="tel:720-722-1684"
+    style="secondary"
+    text="Cell"
+    icon={{
+      name: "line-md:phone-call-loop",
+      side: "right",
+    }}
+  />
+</li>
+<li>
+      <Link
+      href="https://github.com/nebulae1"
+      style="secondary"
+      text="GitHub"
+      icon={{
+        name: "line-md:github-loop",
+        side: "right",
+      }}
+    />
+  </li>
+  <li>
+    <Link
+    href="https://www.linkedin.com/in/jrchelton/"
+    style="secondary"
+    text="LinkedIn"
+    icon={{
+      name: "line-md:speedometer-loop",
+      side: "right",
+    }}
+  />
+</li>
+<li>
+  <Link
+  href="https://www.buymeacoffee.com/jrchelton"
+  style="secondary"
+  text="Buy Me"
+  icon={{
+    name: "line-md:coffee-loop",
+    side: "right",
+  }}
+/>
+</li>
+</ul>
+    </div>
+  </section>
+</MainLayout>

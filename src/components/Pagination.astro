@@ -1,0 +1,38 @@
+---
+import Link from "./Link.astro";
+
+const { prevUrl, nextUrl } = Astro.props;
+---
+
+<nav aria-label="Blog pages">
+  {
+    prevUrl && (
+      <Link
+        text="Previous"
+        href={prevUrl}
+        style="primary"
+        borderVisible={true}
+        isFilled={false}
+        icon={{
+          name: "line-md:chevron-double-left",
+          side: "left",
+        }}
+      />
+    )
+  }
+  {
+    nextUrl && (
+      <Link
+        text="Next"
+        href={nextUrl}
+        style="primary"
+        borderVisible={true}
+        isFilled={false}
+        icon={{
+          name: "line-md:chevron-double-right",
+          side: "right",
+        }}
+      />
+    )
+  }
+</nav>
