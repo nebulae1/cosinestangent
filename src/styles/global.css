@@ -584,6 +584,10 @@ header {
   }
 }
 
+.headshot-image {
+  width: 50%;
+}
+
 /* category cloud */
 .categories {
   list-style: none;
