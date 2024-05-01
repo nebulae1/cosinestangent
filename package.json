@@ -18,7 +18,7 @@
     "astro-icon": "^1.1.0",
     "postcss": "^8.4.35",
     "postcss-preset-env": "^9.4.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.5"
   },
   "devDependencies": {
     "@iconify-json/line-md": "^1.1.36"
