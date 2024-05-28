@@ -20,7 +20,7 @@ Before continuing, lets take a moment and mentally, or verbally, thank them.
 
 We are free because of them.
 
-Before continuing, lets take a longer moment and think of what is often ignored. The poor souls who are often women and children. The "Collateral Damage". That term makes me sick to my stomach as it implies a lack of consideration and care. It should be criminal. No conflict is the same, but there is always the loss of innocent life. Recently, we have all seen tragedy unfold all over the world only furthering the loss.
+Before continuing, lets take a longer moment and think of what is often ignored. The poor souls who are often women and children. The "Collateral Damage", the term given to them by war. That term makes me sick to my stomach as it implies a lack of consideration and care. It should be criminal. No conflict is the same, but there is always the loss of innocent life. Recently, we have all seen tragedy unfold all over the world only furthering the loss.
 
 Not their loss, but OUR loss. We are all humans with families, hopes, and dreams.
 
