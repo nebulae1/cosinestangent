@@ -18,6 +18,14 @@ export async function getStaticPaths() {
       params: { category: slugify("Mentorship") },
       props: { name: "Mentorship" },
     },
+    {
+      params: { category: slugify("Holidays") },
+      props: { name: "Holidays" },
+    },
+    {
+      params: { category: slugify("History") },
+      props: { name: "History" },
+    },
   ];
 }
 
