@@ -72,7 +72,7 @@ We had dinner in the JFK booth at The Union Oyster House, the best table in the 
 
 <img src="/images/Holiday\20230527_165758.jpg" class="image" alt="JFK booth"/>
 
-I highly recommend this place if you are ever in Boston. They have fantastic clam chowder and fresh lobsters.
+I highly recommend this place if you are ever in Boston. They have fantastic clam chowder, fresh lobsters, and oysters of course.
 
 <img src="/images/Holiday\20230527_171626.jpg" class="image" alt="JFK booth"/>
 
