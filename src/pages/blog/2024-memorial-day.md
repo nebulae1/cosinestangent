@@ -60,6 +60,8 @@ Let's prepare to the level that my children and your children will not know war 
 
 <img src="/images/Holiday\DSC05120c2.JPG" class="image" alt="Calvin Munger tombstone"/>
 
+We have enjoyed spending this Memorial Day at home as a family with the freedom to learn new things. Miles is trying to crack timed math challenges. Barbara even joined in on the competition! London picked up the harmonica and hasn't put it down (yay youtube lessons). Emilie is advancing her marketing skills and I found a cool retro python challenge site as well. Give it a try at <a href="http://www.pythonchallenge.com/" target="_blank">EXTERNAL LINK</a>.
+
 ## Memorial Day Memories 2023
 
 ### Boston
