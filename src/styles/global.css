@@ -47,11 +47,11 @@ h6 {
   --accent--dark: var(--_hue) 50% 50%;
   --muted--dark: var(--_hue) 20% 2%;
 
-  --bkg: var(--bkg--light);
-  --txt: var(--txt--light);
-  --accent: var(--accent--light);
-  --muted: var(--muted--light);
-  color-scheme: light;
+  --bkg: var(--bkg--dark);
+  --txt: var(--txt--dark);
+  --accent: var(--accent--dark);
+  --muted: var(--muted--dark);
+  color-scheme: dark;
 
   /* dynamic spacing adapted from utopia.fyi */
   --space-2xs: clamp(0.31rem, calc(0.18rem + 0.65vw), 0.69rem);

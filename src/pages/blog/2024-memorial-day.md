@@ -4,7 +4,7 @@ title: Memorial Day Memories
 date: 2024-05-27
 author: Joshua Richard Craig Helton
 image: {
-    src: "/images/Holiday/DSC05083.JPG",
+    src: "/images/Holiday/DSC05083.webp",
     alt: "Historic West St Cemetary",
 }
 description: Isn't that a beautiful sight? That's my back yard! My first memories of New England were it's historic cemetaries and rock walls. On Memorial Day we, as a country, give thanks to those who have fought for our freedom. Many have given their all. We should do our best to be kind to one another to ensure their sacrifice is not in vain.
@@ -41,13 +41,13 @@ My house is surrounded by historic cemetaries which were here long before my Vic
 
 ### Jabez Hawkins
 
-<img src="/images/Holiday\DSC05120c3.JPG" class="image" alt="Jabez Hawkins Gravestone with flag"/>
+<img src="/images/Holiday\DSC05120c3.webp" class="image" alt="Jabez Hawkins Gravestone with flag"/>
 
 There are many vets buried here, but my favorite so far has been Mr. Jabez Hawkins. He served in the Revolutionary War and was a POW a whopping 4 times! This tiny, unassuming gravestone can be so inspirational without Jabez saying a word. I could only imagine what was going through his mind the 2nd or 3rd time he was caught. The 4th was probably a walk in the park! In all seriousness, it shows how both sides valued life, even if this is one instance.  
 
 ### Daniel Munger & his son Calvin
 
-<img src="/images/Holiday\DSC05122.JPG" class="image" alt="Daniel Munger & his son Calvin tombstones"/>
+<img src="/images/Holiday\DSC05122.webp" class="image" alt="Daniel Munger & his son Calvin tombstones"/>
 
 I don't know much about Daniel Munger here to be honest. He is buried next to his son who died about a year later in 1806. Calvin's epitaph is strong and reads:
 
@@ -58,7 +58,7 @@ Prepare for death & follow me<br>
 
 Let's prepare to the level that my children and your children will not know war like the veterans we are celebrating today.
 
-<img src="/images/Holiday\DSC05120c2.JPG" class="image" alt="Calvin Munger tombstone"/>
+<img src="/images/Holiday\DSC05120c2.webp" class="image" alt="Calvin Munger tombstone"/>
 
 We have enjoyed spending this Memorial Day at home as a family with the freedom to learn new things. Miles is trying to crack timed math challenges. Barbara even joined in on the competition! London picked up the harmonica and hasn't put it down (yay youtube lessons). Emilie is advancing her marketing skills and I found a cool retro python challenge site as well. Give it a try at <a href="http://www.pythonchallenge.com/" target="_blank">EXTERNAL LINK</a>.
 
@@ -72,7 +72,7 @@ Last year, we took the kids to Boston for Memorial Day. It was very special as w
 
 We had dinner in the JFK booth at The Union Oyster House, the best table in the house!
 
-<img src="/images/Holiday\20230527_165758.jpg" class="image" alt="JFK booth"/>
+<img src="/images/Holiday\20230527_165758.webp" class="image" alt="JFK booth"/>
 
 I highly recommend this place if you are ever in Boston. They have fantastic clam chowder, fresh lobsters, and oysters of course.
 
@@ -80,4 +80,4 @@ I highly recommend this place if you are ever in Boston. They have fantastic cla
 
 After living out our dreams on the houseboat, the next day we met up with our old friend Paul Revere. His path led us all to freedom and on that morning, our breakfast!
 
-<img src="/images/Holiday\20230528_091837(0).jpg" class="image" alt="Paul Revere Statue"/>
+<img src="/images/Holiday\20230528_091837(0).webp" class="image" alt="Paul Revere Statue"/>
