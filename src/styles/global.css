@@ -449,7 +449,7 @@ button {
 
 .badge {
   padding: 4px 10px;
-  background-color: hsl(var(--accent));
+  background-color: hsl(var(--accent--light));
   border-radius: var(--radius-sm);
   color: hsl(var(--txt));
   text-decoration: none;
@@ -459,7 +459,7 @@ button {
 
 
   &:hover {
-    color: hsl(var(--muted));
+    color: hsl(var(--dark));
     opacity: 0.8;
   }
 
