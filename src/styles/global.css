@@ -303,7 +303,7 @@ button {
 
   &.filled {
     --fill: var(--type);
-    color: hsl(var(--bkg));
+    color: hsl(var(--txt));
   }
 
   &.bordered {
@@ -451,7 +451,7 @@ button {
   padding: 4px 10px;
   background-color: hsl(var(--accent));
   border-radius: var(--radius-sm);
-  color: hsl(var(--muted));
+  color: hsl(var(--txt));
   text-decoration: none;
   letter-spacing: 0.054em;
   text-transform: uppercase;
