@@ -1,0 +1,16 @@
+name: Lighthouse
+on: push
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Lighthouse on urls and validate with lighthouserc
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: 'https://exterkamp.codes/'
+          configPath: '.github/lighthouse/lighthouserc.json'
+
+          urls: |
+          ${{ steps.vercel_action.outputs.preview-url }}
+      budgetPath: '.github/lighthouse/budget.json'
