@@ -1,10 +1,24 @@
 {
-    "ci": {
-      "assert": {
-        "assertions": {
-          "first-contentful-paint": ["error", { "minScore": 0.6 }],
-          "largest-contentful-paint": ["error", { "maxScore": 0.9 }]
-        }
+  "ci": {
+    "assert": {
+      "preset": "lighthouse:recommended",
+      "assertions": {
+        "offscreen-images": "off",
+        "uses-webp-images": "off",
+        "bf-cache": "off",
+        "deprecations": "off",
+        "errors-in-console": "off",
+        "meta-description": "off",
+        "crawlable-anchors": "off",
+        "redirects": "off",
+        "third-party-facades": "off",
+        "unused-css-rules": "off",
+        "unused-javascript": "off",
+        "color-contrast": "off"
       }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
     }
   }
+}
