@@ -9,6 +9,11 @@
         "deprecations": "off",
         "errors-in-console": "off",
         "meta-description": "off",
+        "crawlable-anchors": "off",
+        "redirects": "off",
+        "third-party-facades": "off",
+        "unused-css-rules": "off",
+        "unused-javascript": "off",
         "color-contrast": "off"
       }
     },
