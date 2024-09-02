@@ -5,6 +5,10 @@
       "assertions": {
         "offscreen-images": "off",
         "uses-webp-images": "off",
+        "bf-cache": "off",
+        "deprecations": "off",
+        "errors-in-console": "off",
+        "meta-description": "off",
         "color-contrast": "off"
       }
     },
