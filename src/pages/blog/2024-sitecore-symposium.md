@@ -5,7 +5,7 @@ date: 2024-12-2
 author: Joshua Richard Craig Helton
 image: {
     src: "/images/Symposium/symposium.webp",
-    alt: "Sitecore Symposium 2024 Logo with Nashville Syline",
+    alt: "Sitecore Symposium 2024 Logo with Nashville Skyline",
 }
 description: What hasn't already been said about Symposium? You might be asking yourself, wasn't that like 6 weeks ago? Why would I bother writing about a conference that is covered by Sitecore before, during and after? Why? Because it was epic and the reverberations are being felt today in a big way.
 draft: false
@@ -36,7 +36,7 @@ Sitecore had an app for the conference that just worked. It gave you reminders f
 <img src="/images/Symposium\Screenshot_20241130-162827_Sitecore Symposium 2024.webp" class="image" alt="Notifications"/>
 
 ## Accenture and Avanade
-The main reason I was there. Everyone knows this has been a tough year for IT professionals and teams that put together these mega ecommerce platforms. When I found an opportunity for Avanade in Singapore I was intregued but didn't think I would be eligible living in Vermont, about as far away from Singapore as I could imagine. I was shocked when about 2 weeks later HR reached out to me about the same opportunity! A great friend and previous (and now current!) coworker, Scott Young, introduced me to all the right people, some I already had known. After spending the week with both teams, I knew I would not just fit in, but that I would thrive.
+The main reason I was there. Everyone knows this has been a tough year for IT professionals and teams that put together these mega ecommerce platforms. When I found an opportunity for Avanade in Singapore I was intrigued but didn't think I would be eligible living in Vermont, about as far away from Singapore as I could imagine. I was shocked when about 2 weeks later HR reached out to me about the same opportunity! A great friend and previous (and now current!) coworker, Scott Young, introduced me to all the right people, some I already had known. After spending the week with both teams, I knew I would not just fit in, but that I would thrive.
 
 ## Finally Offer Time!
 I will always remember that moment. Midnight. At the bar. With Scott and my new friends. I thought I would take a moment to check emails. Yes, I am pretty much always working, even when I am having fun. There it was only a couple emails down, LIKE ROY KENT I SCORED MY OWN GOOOOOOOAAAAAAAAL. It was magical. It couldn't have been with better people. All while drinking "Rootbeer floats" at a college dive bar. Yes, they were delicious and everyone was drinking them.
