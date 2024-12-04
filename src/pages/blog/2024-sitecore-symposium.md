@@ -55,6 +55,8 @@ I definately got lots of great swag, which is one of my favorite things. The bes
 ## Party Time!
 Then began the real party. Sitecore knows how to throw a party. Everthing was meticulously planned and the level of detail was through the roof. If you know me, you know I have a sweet tooth and an eye for detail. Custom Sitecore logo topped cotton candy? Yes please! We all burned down the town and closed out Kid Rock's bar. 
 
+<img src="/images/Symposium\image_20241203_05214184863458-977c-4c88-9745-f4214c709c81.jpg" class="image" alt="Craig with 2 cotton candies"/>
+
 <img src="/images/Symposium\Dec_2_2024_9_05_00.webp" class="image" alt="Scott and I at Kid Rocks"/>
 
 ## Post Symposium
