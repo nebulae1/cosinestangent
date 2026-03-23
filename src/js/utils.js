@@ -1,4 +1,5 @@
 export function slugify(text) {
+  if (!text) return '';
   return text
     .toString()
     .toLowerCase()
@@ -10,9 +11,35 @@ export function slugify(text) {
 }
 
 export function formatDate(date) {
-  return new Date(date).toLocaleDateString('en-US', {
-    timeZone: "UTC",
-  })
+  if (!date) return '';
+  
+  let dateObj;
+  
+  // If it's a string, parse YYYY-MM-DD format
+  if (typeof date === 'string') {
+    const [year, month, day] = date.split('-');
+    if (year && month && day) {
+      dateObj = new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
+    } else {
+      return date; // Return original if format is wrong
+    }
+  } else if (date instanceof Date) {
+    dateObj = date;
+  } else {
+    // Unexpected type, return string representation
+    return String(date);
+  }
+  
+  // Check if date is valid
+  if (isNaN(dateObj.getTime())) {
+    return String(date);
+  }
+  
+  return dateObj.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
 }
 
 export function formatBlogPosts(posts, {
@@ -21,6 +48,11 @@ export function formatBlogPosts(posts, {
   sortByDate = true,
   limit = undefined,
 } = {}) {
+  // Ensure posts is an array
+  if (!Array.isArray(posts)) {
+    console.error('formatBlogPosts received non-array posts:', posts);
+    return [];
+  }
 
   const filteredPosts = posts.reduce((acc, post) => {
     const { date, draft } = post.frontmatter;

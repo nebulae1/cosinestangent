@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from 'astro:transitions';
 import Seo from "../components/Seo.astro";
 
 const { title, description, image, frontmatter, robots } = Astro.props;
@@ -15,7 +15,7 @@ const { title, description, image, frontmatter, robots } = Astro.props;
 
   <Seo {title} {description} url={Astro.url} {image} {frontmatter} {robots} />
 
-  <ViewTransitions />
+  <ClientRouter />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HC1SKCXT94"></script>

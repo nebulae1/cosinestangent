@@ -5,7 +5,22 @@ import Link from "../components/Link.astro";
 
 import { formatBlogPosts } from "../js/utils";
 
-const allPosts = await Astro.glob("./blog/*.md");
+const modules = import.meta.glob<any>("./blog/*.md", { eager: true });
+const allPosts = Object.entries(modules).map(([path, mod]) => {
+  // Astro markdown modules export with a 'frontmatter' property
+  const frontmatter = mod.frontmatter || Object.entries(mod).reduce((acc, [key, value]) => {
+    if (key !== 'default') {
+      acc[key] = value;
+    }
+    return acc;
+  }, {} as Record<string, any>);
+  
+  return {
+    frontmatter,
+    url: '/' + path.replace(/^\.\//, '').replace(/\.md$/, '') + '/'
+  };
+});
+
 const formattedPosts = formatBlogPosts(allPosts, {
   limit: 3,
 });

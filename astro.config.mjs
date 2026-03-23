@@ -1,13 +1,13 @@
 import { defineConfig } from 'astro/config';
-// Import /static for a static site
-import vercelStatic from '@astrojs/vercel/static';
-import icon from "astro-icon";
-import sitemap from "@astrojs/sitemap";
+import icon from 'astro-icon';
+import vercel from '@astrojs/vercel'; // Import the main package
 
-// https://astro.build/config
 export default defineConfig({
-  site: 'https://cosinestangent.com',
-  integrations: [icon(), sitemap()],
-  output: 'static',
-  adapter: vercelStatic(),
+    integrations: [
+    icon(), // Add the integration to the list
+    // ... other integrations
+  ],
+  output: 'static', // Set output to 'static'
+  adapter: vercel(), // Use the main vercel adapter
+  // ... other configurations
 });

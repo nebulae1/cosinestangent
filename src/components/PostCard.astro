@@ -17,13 +17,15 @@ const { title, date, author, image, description, category } = frontmatter;
     <a href={`/category/${slugify(category)}/`} class="badge">{category}</a>
   </small>
   <a href={url} aria-hidden="true" tabindex="-1">
-    <Image
-      src={image.src}
-      alt={image.alt}
-      width="400"
-      height="250"
-      format="avif"
-    />
+    {image && (
+      <Image
+        src={image.src}
+        alt={image.alt}
+        width="400"
+        height="250"
+        format="avif"
+      />
+    )}
   </a>
   <div class="content">
     <div>

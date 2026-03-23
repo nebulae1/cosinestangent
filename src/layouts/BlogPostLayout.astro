@@ -9,7 +9,7 @@ import { formatBlogPosts } from "../js/utils";
 const { frontmatter } = Astro.props;
 const { title, description, date, category, author, image } = frontmatter;
 
-const allPosts = await Astro.glob("../pages/blog/*.md");
+const allPosts = await import.meta.glob("../pages/blog/*.md");
 const formattedPosts = formatBlogPosts(allPosts, {
   sortByDate: false,
 });

@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
 title: Sitecore Symposium 2024 
-date: 2024-12-2
+date: 2024-12-02
 author: Joshua Richard Craig Helton
 image: {
     src: "/images/Symposium/symposium.webp",
