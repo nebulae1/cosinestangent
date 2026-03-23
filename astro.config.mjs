@@ -3,6 +3,7 @@ import icon from 'astro-icon';
 import vercel from '@astrojs/vercel'; // Import the main package
 
 export default defineConfig({
+    site: 'https://www.cosinestangent.com/',
     integrations: [
     icon(), // Add the integration to the list
     // ... other integrations
