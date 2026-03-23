@@ -1,7 +1,22 @@
 ---
 import { formatBlogPosts, slugify } from "../js/utils";
 
-const allPosts = await import.meta.glob("../pages/blog/*.md");
+const modules = import.meta.glob<any>("../pages/blog/*.md", { eager: true });
+const allPosts = Object.entries(modules).map(([path, mod]) => {
+  // Astro markdown modules export with a 'frontmatter' property
+  const frontmatter = mod.frontmatter || Object.entries(mod).reduce((acc, [key, value]) => {
+    if (key !== 'default') {
+      acc[key] = value;
+    }
+    return acc;
+  }, {} as Record<string, any>);
+  
+  return {
+    frontmatter,
+    url: '/blog/' + path.replace(/^\.\//, '').replace(/\.md$/, '') + '/'
+  };
+});
+
 const formattedPosts = formatBlogPosts(allPosts);
 const allCategories = formattedPosts
   .map((cat) => cat.frontmatter.category.toLowerCase())
@@ -25,7 +40,10 @@ const { showCount } = Astro.props;
   {
     Object.entries(processedCategories).map(([key, val]) => (
       <li>
-        <a class="badge" href={`/category/${slugify(key)}/`}>{key} {showCount && `(${val})`}</a>
+        <a class="badge" href={`/category/${slugify(key)}/`}>
+          {key}
+          {showCount && ` (${val})`}
+        </a>
       </li>
     ))
   }

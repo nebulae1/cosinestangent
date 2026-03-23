@@ -9,7 +9,21 @@ import { formatBlogPosts } from "../js/utils";
 const { frontmatter } = Astro.props;
 const { title, description, date, category, author, image } = frontmatter;
 
-const allPosts = await import.meta.glob("../pages/blog/*.md");
+const modules = import.meta.glob<any>("../pages/blog/*.md", { eager: true });
+const allPosts = Object.entries(modules).map(([path, mod]) => {
+  const frontmatter = mod.frontmatter || Object.entries(mod).reduce((acc, [key, value]) => {
+    if (key !== 'default') {
+      acc[key] = value;
+    }
+    return acc;
+  }, {} as Record<string, any>);
+  
+  return {
+    frontmatter,
+    url: '/blog/' + path.replace(/^\.\//, '').replace(/\.md$/, '') + '/'
+  };
+});
+
 const formattedPosts = formatBlogPosts(allPosts, {
   sortByDate: false,
 });
@@ -37,7 +51,7 @@ const relatedPosts = formattedPosts
     <div class="sidebar">
       <aside class="container" aria-label="Blog categories">
         <h2 class="h3">Blog Categories</h2>
-        <CategoryCloud />
+        <CategoryCloud showCount={true}/>
       </aside>
       {
         relatedPosts.length > 0 && (

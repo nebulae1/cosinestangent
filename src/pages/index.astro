@@ -15,9 +15,11 @@ const allPosts = Object.entries(modules).map(([path, mod]) => {
     return acc;
   }, {} as Record<string, any>);
   
+  // Extract the slug from path like "./blog/post-name.md"
+  const slug = path.replace(/^\.\/blog\//, '').replace(/\.md$/, '');
   return {
     frontmatter,
-    url: '/' + path.replace(/^\.\//, '').replace(/\.md$/, '') + '/'
+    url: `/blog/${slug}/`
   };
 });
 

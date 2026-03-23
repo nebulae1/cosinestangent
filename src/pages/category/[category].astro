@@ -5,34 +5,51 @@ import PostCard from "../../components/PostCard.astro";
 import { slugify, formatBlogPosts } from "../../js/utils";
 
 export async function getStaticPaths() {
-  return [
-    {
-      params: { category: slugify("Sitecore") },
-      props: { name: "Sitecore" },
-    },
-    {
-      params: { category: slugify("Astro") },
-      props: { name: "Astro" },
-    },
-    {
-      params: { category: slugify("Mentorship") },
-      props: { name: "Mentorship" },
-    },
-    {
-      params: { category: slugify("Holidays") },
-      props: { name: "Holidays" },
-    },
-    {
-      params: { category: slugify("History") },
-      props: { name: "History" },
-    },
-  ];
+  const modules = import.meta.glob<any>("../blog/*.md", { eager: true });
+  const allPosts = Object.entries(modules).map(([path, mod]) => {
+    // Astro markdown modules export with a 'frontmatter' property
+    const frontmatter = mod.frontmatter || Object.entries(mod).reduce((acc, [key, value]) => {
+      if (key !== 'default') {
+        acc[key] = value;
+      }
+      return acc;
+    }, {} as Record<string, any>);
+    
+    return {
+      frontmatter,
+      url: '/blog/' + path.replace(/^\.\//, '').replace(/\.md$/, '') + '/'
+    };
+  });
+  
+  const formattedPosts = formatBlogPosts(allPosts);
+  
+  // Get unique categories from posts
+  const uniqueCategories = [...new Set(formattedPosts.map(post => post.frontmatter.category))];
+  
+  return uniqueCategories.map(category => ({
+    params: { category: slugify(category) },
+    props: { name: category },
+  }));
 }
 
 const { category } = Astro.params;
 const { name } = Astro.props;
 
-const allPosts = await import.meta.glob("../blog/*.md");
+const modules = import.meta.glob<any>("../blog/*.md", { eager: true });
+const allPosts = Object.entries(modules).map(([path, mod]) => {
+  const frontmatter = mod.frontmatter || Object.entries(mod).reduce((acc, [key, value]) => {
+    if (key !== 'default') {
+      acc[key] = value;
+    }
+    return acc;
+  }, {} as Record<string, any>);
+  
+  return {
+    frontmatter,
+    url: '/blog/' + path.replace(/^\.\//, '').replace(/\.md$/, '') + '/'
+  };
+});
+
 const formattedPosts = formatBlogPosts(allPosts);
 const catPosts = formattedPosts.filter(
   (post) => slugify(post.frontmatter.category) === category

@@ -187,6 +187,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+strong,
+b {
+  font-weight: 700;
+  color: hsl(var(--accent));
+}
+
 .h1,
 .h2,
 .h3,

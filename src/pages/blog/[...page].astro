@@ -29,7 +29,7 @@ export async function getStaticPaths({ paginate }) {
     
     return {
       frontmatter,
-      url: '/' + path.replace(/^\.\//, '').replace(/\.md$/, '') + '/'
+      url: '/blog/' + path.replace(/^\.\//, '').replace(/\.md$/, '') + '/'
     };
   });
   
