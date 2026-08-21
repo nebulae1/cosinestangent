@@ -7,7 +7,7 @@ image: {
     src: "/images/Sitecore/Screenshot-2026-05-09-054907.png",
     alt: "Sitecore docs webpage",
 }
-description: The latest Sitecore Documentation experience introduces AI-assisted ways to interact with Sitecore's documentation, combining traditional documentation search with an **AI-powered Documentation Assistant**. The result is a more conversational approach to finding answers, understanding technical concepts, and navigating an increasingly large Sitecore ecosystem.
+description: The latest Sitecore Documentation experience introduces AI-assisted ways to interact with Sitecore's documentation, combining traditional documentation search with an AI-powered Documentation Assistant. The result is a more conversational approach to finding answers, understanding technical concepts, and navigating an increasingly large Sitecore ecosystem.
 draft: false
 category: Sitecore
 ---
